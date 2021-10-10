@@ -1,3 +1,3 @@
 AI Algorithms project with Reinforced learning
 
-Nicholas & Emmanuel.
+Nicholas, Emmanuel & Joseph.
