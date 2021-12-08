@@ -17,7 +17,7 @@ def train():
     model = build_model(states, actions, dense_layers = 4)
     dqn = build_agent(model, actions)
     dqn.compile(Adam(lr=0.01), metrics = ['mae'])
-    dqn.fit(env, nb_steps = 4500000, visualize = True, verbose = 1)
+    dqn.fit(env, nb_steps = 1000000, visualize = True, verbose = 1)
     dqn.save_weights('dqn_weights2.h5f', overwrite = True)
 
 def load():
@@ -50,4 +50,4 @@ def build_agent(model, actions):
 
 
 if __name__ == "__main__":
-    train()
+    load()
