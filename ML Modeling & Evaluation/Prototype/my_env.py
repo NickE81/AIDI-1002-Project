@@ -112,7 +112,7 @@ class DinoEnv(gym.Env):
             reward = obstacle.update()
             distance = obstacle.rect.x - (self.player.dino_rect.x + self.player.dino_rect.width)
             if self.player.dino_rect.colliderect(obstacle.rect):
-                pygame.time.delay(100)
+                pygame.time.delay(200)
                 reward = -40
                 done = True
             if distance < min_distance:
